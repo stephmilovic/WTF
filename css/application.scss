@@ -1,0 +1,198 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+
+body {
+  background-color: $ltgrey;
+  background-image: url(/images/bg.png);
+  background-position: center 20px;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  width: 100%;
+  margin: 0;
+}
+
+a, a:visited {
+  color: lighten($green, 10%);
+  @include transition(color 0.4s linear);
+}
+
+a:hover, a:active {
+  color: $green;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 1.333em;
+  text-align: center;
+  color: #00B292;
+  font-family: 'lekton';
+  @include media($desktop) {
+
+  }
+}
+
+.intro-text{
+  color: #999;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+h2 {
+  @extend h1;
+  text-align: left;
+  font-size: 2.5em;
+  line-height: .5em;
+  color: $ltgrey;
+}
+
+h3 {
+  @extend h2;
+  color: $grey;
+}
+
+
+nav {
+  background-color: $grey;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  color: $green;
+  margin-top: 0;
+  text-transform: uppercase;
+  display: block;
+ @include media($tablet) {
+    border: 0;
+    margin-left: auto;
+    max-width: 68.57143em;
+    margin-right: auto;
+  }
+  
+      ul{
+          margin-top: 0;
+          padding: 0;
+          list-style-type: none;
+                  @include media($tablet) {
+                    margin-bottom: 0;
+                  }
+        li {
+           @include media($tablet) {
+              float: left;
+              position: relative;
+              padding-top: .3em;
+              padding-bottom: .3em;
+              }
+
+          a {
+             display: block;
+             text-decoration: none;
+             padding: 5px 20px;
+             background-color: #444;
+             border-bottom: 1px solid #ccc;
+
+              @include media($tablet) {
+                              border-bottom: 0;
+              }
+          }
+        } /* end .menu li */
+      }  /* end current highlighters */
+ } /* end .nav */
+
+
+.wrap {
+
+  width: 100%;
+  margin: 0 auto;
+   @include media($tablet) {  
+    display: table;
+background-color: #444;
+  }
+}
+
+
+
+img.centered{
+width: 100%;
+}
+
+section#work{
+  @include outer-container;
+  padding:1%;
+  background-color: $green;
+  background:url(
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQVQIW2Nk2DTpPwMUGN19xcAIEwBxzimLQQRgHJBCRqP+mv8gGRgAAKGsEgpUKMqUAAAAAElFTkSuQmCC   ) repeat;
+  max-width: 100%;
+  @include media ($bigscreen){
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+    ul {
+        list-style-type: none;
+        padding:0;
+
+
+      li { 
+           @include span-columns(12);
+           @include media($tablet) {
+              @include span-columns(4);
+              @include omega(3n);
+              margin-left: 0;
+              margin-bottom: 2%; 
+              padding:0;
+            }
+           margin-bottom: 3%; 
+          }
+    }
+}
+
+
+
+section {
+  @include outer-container;
+  
+  aside {
+    @include span-columns(12);
+    
+    @include media($desktop) {
+      @include span-columns(4);
+    }
+  }
+  
+  article {
+    @include span-columns(12);
+    
+    @include media($desktop) {
+      @include span-columns(8);
+    }
+  }
+  
+  figure {
+    margin-bottom: 1em;
+  }
+}
+
+figcaption {
+  color: darken($grey, 10%);
+  font-size: em(11, $base-value);
+  font-style: italic;
+  line-height: 1.45em;
+  margin: .5em 0;
+}
+
+footer {
+  font-size: em(12, $base-value);
+  font-style: italic;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.content-image {
+  @include fill-parent;
+}
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+/* /////// Expandr CSS /////// */
+
