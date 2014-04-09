@@ -4,7 +4,7 @@
 
 body {
   background-color: $ltgrey;
-  background-image: url(/images/bg.png);
+  background-image: url('/images/bg.png');
   background-position: center 20px;
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
@@ -114,6 +114,25 @@ img.centered{
 width: 100%;
 margin-left: auto;
 margin-right: auto;  
+@include span-columns(12);
+           margin-bottom: 3%;            
+
+
+           @include media($desktop) {
+              @include span-columns(4);
+              @include omega(3n);
+              margin-left: 0;
+              margin-bottom: 2%; 
+              padding:0;
+            }
+
+            @include media($tab) {
+              @include span-columns(6);
+              @include omega(2n);
+              margin-left: 0;
+              margin-bottom: 2%; 
+              padding:0;
+            }
 }
 
 section#work{
@@ -133,25 +152,7 @@ section#work{
 
 
       li { 
-           @include span-columns(12);
-           margin-bottom: 3%;            
-
-
-           @include media($desktop) {
-              @include span-columns(4);
-              @include omega(3n);
-              margin-left: 0;
-              margin-bottom: 2%; 
-              padding:0;
-            }
-
-            @include media($tab) {
-              @include span-columns(6);
-              @include omega(2n);
-              margin-left: 0;
-              margin-bottom: 2%; 
-              padding:0;
-            }
+           
 
           }
     }
@@ -209,5 +210,5 @@ box-sizing: border-box;
 }
 /* /////// Expandr CSS /////// */
 
-.content {display:none;}
+
 
