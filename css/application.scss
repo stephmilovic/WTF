@@ -112,6 +112,8 @@ background-color: #444;
 
 img.centered{
 width: 100%;
+margin-left: auto;
+margin-right: auto;  
 }
 
 section#work{
@@ -132,14 +134,25 @@ section#work{
 
       li { 
            @include span-columns(12);
-           @include media($tablet) {
+           margin-bottom: 3%;            
+
+
+           @include media($desktop) {
               @include span-columns(4);
               @include omega(3n);
               margin-left: 0;
               margin-bottom: 2%; 
               padding:0;
             }
-           margin-bottom: 3%; 
+
+            @include media($tab) {
+              @include span-columns(6);
+              @include omega(2n);
+              margin-left: 0;
+              margin-bottom: 2%; 
+              padding:0;
+            }
+
           }
     }
 }
@@ -195,4 +208,6 @@ footer {
 box-sizing: border-box;
 }
 /* /////// Expandr CSS /////// */
+
+.content {display:none;}
 

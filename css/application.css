@@ -91,7 +91,9 @@ nav {
       background-color: #444; } }
 
 img.centered {
-  width: 100%; }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
 
 section#work {
   *zoom: 1;
@@ -122,7 +124,7 @@ section#work {
       margin-bottom: 3%; }
       section#work ul li:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 850px) {
         section#work ul li {
           display: block;
           float: left;
@@ -136,6 +138,21 @@ section#work {
           section#work ul li:nth-child(3n) {
             margin-right: 0; }
           section#work ul li:nth-child(3n+1) {
+            clear: left; } }
+      @media screen and (min-width: 481px) and (max-width: 849px) {
+        section#work ul li {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-left: 0;
+          margin-bottom: 2%;
+          padding: 0; }
+          section#work ul li:last-child {
+            margin-right: 0; }
+          section#work ul li:nth-child(2n) {
+            margin-right: 0; }
+          section#work ul li:nth-child(2n+1) {
             clear: left; } }
 
 section {
@@ -203,3 +220,5 @@ footer {
   box-sizing: border-box; }
 
 /* /////// Expandr CSS /////// */
+.content {
+  display: none; }
