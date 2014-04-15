@@ -4,6 +4,7 @@
     <title>Steph Milovic - Web Design & Front End Development Portfolio | Chicago</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     <link rel="stylesheet" href="css/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Lekton|Josefin+Sans' rel='stylesheet' type='text/css'>
  
@@ -23,44 +24,102 @@
   <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
   <script type="text/javascript" src="js/jquery.colio.min.js"></script>
-
     <script type="text/javascript" src="css/colio-black/fancybox/jquery.fancybox.js"></script> 
       <script type="text/javascript">
-    $(document).ready(function(){
-      
-      // "scrollTop" plugin
-      $.scrollUp();
-      
-      // "colio" plugin
-      $('.portfolio .list').colio({
-        id: 'demo_1',
-        theme: 'black',
-        placement: 'inside',
-        hiddenItems: '.isotope-hidden',
-        onContent: function(content){
-          // init "fancybox" plugin
-          $('.fancybox', content).fancybox();
-        }
-      });
-      
-      // "isotope" plugin
-      var filter = '*', isotope_run = function(f) {
-        $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
-        trigger('colio','excludeHidden');
-      };
-      
-      $('.portfolio .filters a').click(function(){
-        $(this).addClass('filter-active').siblings().removeClass('filter-active');
-        var href = $(this).attr('href').substr(1);
-        filter = href ? '.' + href : '*';
-        isotope_run(filter);
-        return false;
-      });
-      
-      isotope_run(filter);
-      
-    });
-  </script>
+        $(document).ready(function(){
+          $.noConflict();
+          // "scrollTop" plugin
+          $.scrollUp();
+          
+          // "colio" plugin
+          $('.portfolio .list').colio({
+            id: 'demo_1',
+            theme: 'black',
+            placement: 'inside',
+            hiddenItems: '.isotope-hidden',
+            onContent: function(content){
+              // init "fancybox" plugin
+              $('.fancybox', content).fancybox();
+            }
+          });
+          
+          // "isotope" plugin
+          var filter = '*', isotope_run = function(f) {
+            $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+            trigger('colio','excludeHidden');
+          };
+          
+          $('.portfolio .filters a').click(function(){
+            $(this).addClass('filter-active').siblings().removeClass('filter-active');
+            var href = $(this).attr('href').substr(1);
+            filter = href ? '.' + href : '*';
+            isotope_run(filter);
+            return false;
+          });
+          
+          isotope_run(filter);
+          
+        });
+      </script>
+
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script> 
+
+        <script src="js/jquery.lazylinepainter-1.4.1.min.js"></script>       
+        <script type="text/javascript"> 
+
+          (function( $ ){  
+
+            /* 
+            * Lazy Line Painter 1.4
+            * SVG Stroke animation.
+            *
+            * https://github.com/camoconnell/lazy-line-painter
+            *
+            * Copyright 2013 
+            * Cam O'Connell - http://www.camoconnell.com  http://www.behance.net/camoconnell 
+            * Released under the MIT license
+            *  
+            */
+
+
+            // Define object containing your Raphael path data.
+            // goto http://lazylinepainter.info to convert your svg into a svgData object.
+            var pathObj = {
+              "create2": {
+                "strokepath": [
+                  {
+                    "path": "M280.9,127.044h-34.049h-5.677v5.667v9.208L59.584,95.873v-7.084L161.729,49.12v4.249v5.667h5.674h34.049  h5.674v-5.667V19.366v-5.667h-5.674h-34.049h-5.674v5.667v17.708L59.584,77.098v-1.064v-5.666H53.91H19.862h-5.677v5.666v34.003  v5.671h5.674h34.049h5.673v-5.666v-2.479l181.594,46.047v8.501l-111.721,78.273H99.307h-5.674v5.669v34.004v5.666h5.674h34.048  h5.674v-5.666v-32.237l107.112-75.441h0.711H280.9h5.674v-5.666V132.71v-5.667H280.9z M173.078,25.035h22.7v22.667h-22.7V25.035z   M48.234,104.374H25.536V81.706h22.698V104.374z M127.681,274.39h-22.698v-22.668h22.698V274.39z M275.223,161.047h-22.698v-22.668  h22.698V161.047z",
+                    "duration": 1300
+                 }
+                  ],
+                  "dimensions": {
+                      "width": 300,
+                      "height": 300
+                  }
+                }
+              };  
+
+$.noConflict();
+            $(document).ready(function(){
+              $('.thing').waypoint(function() {
+             //  Setup your Lazy Line element.
+             //  see README file for more settings
+                $('#create2').lazylinepainter( 
+                  {
+                      "svgData": pathObj,
+                    "strokeWidth": 2,
+                     "strokeColor": "#444444"
+                  }).lazylinepainter('paint'); 
+
+                  }, {triggerOnce: true})
+                });
+
+               })( jQuery ); 
+
+        </script>
+
   </head>
   <body>
     <header>
@@ -81,7 +140,7 @@
 
     <section id="work" class="portfolio">
      <div class="container sixteen columns">
-     <h2>{WORK}</h2>
+     <h2>{WORK}</h2><div class="thing"></div>
         <div class="filters">
           <a href="#" class="filter-active">All</a>
           <a href="#design">Web Design</a>
@@ -222,6 +281,8 @@
           
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <a href="http://google.com">inventore veritatis</a> et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
+
+
 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 
           <ul class="social">
@@ -269,22 +330,33 @@
         
       </div><!-- colio-content # colio_c2 -->
 
-        <!--<img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">
-        <img class="centered" src="http://lorempixel.com/g/400/225">-->
     </div>
+    </section>
+
+
+    <section id="about">
+      <div class="container">
+      <h2>{ABOUT ME}</h2>
+       <div class="rightcol">
+        <p>I am a multidisciplinary web designer & front-end developer with an expertise in SEO based in Chicago. I am always up for a new challenge. Please feel free to fill out the form below or shoot me an <a href="mailto:milovics1@gmail.com">e-mail</a> with any job inquiries, questions, or just to say hello.</p>
+      </div>
+      <div class="leftcol">
+        <div id='create2'></div>  
+      </div>
+
     </section>
 
 
   <footer>
     <p>This example was developed using the Bourbon Neat framework, created by thoughbot. For more information, visit <a href="http://bourbon.io">bourbon.io</a></p>
   </footer>
+  <script type="text/javascript" src="js/waypoints.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>  
+  <!--<script type="text/javascript">
+    $(document).ready(function(){
+      $('.thing').waypoint('disable');
+    }); 
+  </script>-->
 </body>
 </html>
 

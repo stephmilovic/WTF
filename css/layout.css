@@ -150,8 +150,9 @@ input[type="button"]:active {
 /* portfolio filters */
 
 .portfolio .filters {
-	float: right;
-	margin: -35px 20px 20px 0; 
+	right: 0;
+	top: 0;
+	position: absolute;
 }
 
 .portfolio .filters a {

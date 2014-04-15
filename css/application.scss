@@ -22,21 +22,24 @@ a:hover, a:active {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1.333em;
   text-align: center;
   color: #00B292;
   font-family: 'lekton';
-  @include media($desktop) {
-
+  @include media($tab-up) {
+  font-size: 5em;
   }
 }
 
 .intro-text{
   color: #999;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5em;
+    @include media($tab-up) {
+  font-size: 3em;
+  }
 }
 
 h2 {
@@ -157,6 +160,39 @@ section#work{
           }
     }
 }
+
+section#about{
+  @include outer-container;
+  padding:1%;
+   height:1000px;
+  @include media ($bigscreen){
+    padding-right: 4%;
+    padding-left: 4%;
+
+  }
+  h2 {
+    color: $grey;
+  }
+  .leftcol{
+    @include span-columns(12);
+    float: right;
+    @include media ($tablet){
+          float: right;
+      @include span-columns(4);
+    }
+    
+  }
+
+  .rightcol{
+    @include span-columns(12);
+    float: right !important;    
+    @include media ($tablet){
+          float: right;
+      @include span-columns(8);
+    }
+    }
+}
+
 
 
 
