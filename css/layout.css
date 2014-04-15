@@ -275,7 +275,7 @@ footer .copyright {
 	right: 10px;
 	width: 42px;
 	height: 42px;
-	background: #eee url(../images/scrollup.png) no-repeat center;
+	background: url(../images/scrollup.png) no-repeat center;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
