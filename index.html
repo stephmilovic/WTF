@@ -5,121 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    <link href='http://fonts.googleapis.com/css?family=Lekton|Josefin+Sans' rel='stylesheet' type='text/css'>
+
  
   <!-- CSS
   ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/isotope.css">
-    <link rel="stylesheet" href="css/colio.css">
-    <link rel="stylesheet" href="css/colio-black/style.css">
-    <link rel="stylesheet" href="css/colio-black/fancybox/jquery.fancybox.css">
-  <!-- JS
-  ================================================== -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="js/jquery.colio.min.js"></script>
-    <script type="text/javascript" src="css/colio-black/fancybox/jquery.fancybox.js"></script> 
-      <script type="text/javascript">
-        
-        $(document).ready(function(){
-        
-          // "scrollTop" plugin 
-          $.scrollUp();
-         
-          
-          // "colio" plugin
-          $('.portfolio .list').colio({
-            id: 'demo_1',
-            theme: 'black',
-            placement: 'inside',
-            hiddenItems: '.isotope-hidden',
-            onContent: function(content){
-              // init "fancybox" plugin
-              $('.fancybox', content).fancybox();
-            }
-          });
-          
-          // "isotope" plugin
-          var filter = '*', isotope_run = function(f) {
-            $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
-            trigger('colio','excludeHidden');
-          };
-          
-          $('.portfolio .filters a').click(function(){
-            $(this).addClass('filter-active').siblings().removeClass('filter-active');
-            var href = $(this).attr('href').substr(1);
-            filter = href ? '.' + href : '*';
-            isotope_run(filter);
-            return false;
-          });
-          
-          isotope_run(filter);
-          
-        });
-      </script>
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script> 
-
-        <script src="js/jquery.lazylinepainter-1.4.1.min.js"></script>       
-        <script type="text/javascript"> 
-
-          (function( $ ){  
-
-            /* 
-            * Lazy Line Painter 1.4
-            * SVG Stroke animation.
-            *
-            * https://github.com/camoconnell/lazy-line-painter
-            *
-            * Copyright 2013 
-            * Cam O'Connell - http://www.camoconnell.com  http://www.behance.net/camoconnell 
-            * Released under the MIT license
-            *  
-            */
-
-
-            // Define object containing your Raphael path data.
-            // goto http://lazylinepainter.info to convert your svg into a svgData object.
-            var pathObj = {
-              "create2": {
-                "strokepath": [
-                  {
-                    "path": "M280.9,127.044h-34.049h-5.677v5.667v9.208L59.584,95.873v-7.084L161.729,49.12v4.249v5.667h5.674h34.049  h5.674v-5.667V19.366v-5.667h-5.674h-34.049h-5.674v5.667v17.708L59.584,77.098v-1.064v-5.666H53.91H19.862h-5.677v5.666v34.003  v5.671h5.674h34.049h5.673v-5.666v-2.479l181.594,46.047v8.501l-111.721,78.273H99.307h-5.674v5.669v34.004v5.666h5.674h34.048  h5.674v-5.666v-32.237l107.112-75.441h0.711H280.9h5.674v-5.666V132.71v-5.667H280.9z M173.078,25.035h22.7v22.667h-22.7V25.035z   M48.234,104.374H25.536V81.706h22.698V104.374z M127.681,274.39h-22.698v-22.668h22.698V274.39z M275.223,161.047h-22.698v-22.668  h22.698V161.047z",
-                    "duration": 1300
-                 }
-                  ],
-                  "dimensions": {
-                      "width": 300,
-                      "height": 300
-                  }
-                }
-              };  
-
-$.noConflict();
-            $(document).ready(function(){
-              $('.thing').waypoint(function() {
-             //  Setup your Lazy Line element.
-             //  see README file for more settings
-                $('#create2').lazylinepainter( 
-                  {
-                      "svgData": pathObj,
-                    "strokeWidth": 2,
-                     "strokeColor": "#444444"
-                  }).lazylinepainter('paint'); 
-
-                  }, {triggerOnce: true})
-                });
-
-               })( jQuery ); 
-
-        </script>
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen" charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Lekton|Josefin+Sans' rel='stylesheet' type='text/css'>
 
   </head>
   <body>
@@ -332,32 +223,194 @@ $.noConflict();
       </div><!-- colio-content # colio_c2 -->
 
     </div>
+    <div class="thing2"></div>
     </section>
 
 
     <section id="about">
       <div class="container">
-      <h2>{ABOUT ME}</h2>
-       <div class="rightcol">
-        <p>I am a multidisciplinary web designer & front-end developer with an expertise in SEO based in Chicago. I am always up for a new challenge. Please feel free to fill out the form below or shoot me an <a href="mailto:milovics1@gmail.com">e-mail</a> with any job inquiries, questions, or just to say hello.</p>
-      </div>
-      <div class="leftcol">
-        <div id='create2'></div>  
-      </div>
-
+        <h2>{ABOUT ME}</h2>
+         <div class="about-para">
+          <p>I am a multidisciplinary web designer & front-end developer with an expertise in SEO based in Chicago. I am always up for a new challenge. Please feel free to fill out the form below or shoot me an <a href="mailto:milovics1@gmail.com">e-mail</a> with any job inquiries, questions, or just to say hello.</p>
+        </div>
+        <article class="about">
+          <div class="leftcol">
+            <div id='create2'></div>  
+          </div>
+          <div class="rightcol text-mobile">
+          <div class="thing3"></div>
+            <h5>Create {</h5>
+            <p>Photoshop; Illustrator; Flash</p>
+            <p>InDesign; Dreamweaver;</p> 
+            <h5>}</h5>
+          </div>
+        </article>
+        <article class="about">
+          <div class="rightcol">
+            <div id='code2'></div>  
+          </div>
+          <div class="leftcol pad-left text-mobile">
+            <h5>Code {</h5>
+            <p>HTML5; CSS3;</p>
+            <p>SASS; LESS; Compass;</p>
+            <p>Bootstrap; Bourbon; Foundation;</p>
+            <p>Javascript; jQuery; PHP;</p> 
+            <p>Wordpress; Joomla;</p>   
+            <h5>}</h5>                
+          </div>
+        </article>
+        <article class="about">
+          <div class="leftcol">
+            <div id='convert2'></div>  
+          </div>
+          <div class="rightcol text-mobile">
+            <h5>Convert {</h5>
+            <p>SEO; PPC;</p>
+            <p>Social Media;</p>   
+            <h5>}</h5>             
+          </div>
+        </article>
+      </div>  
     </section>
-
-
   <footer>
     <p>This example was developed using the Bourbon Neat framework, created by thoughbot. For more information, visit <a href="http://bourbon.io">bourbon.io</a></p>
   </footer>
+  
+
+  <!-- VENDOR JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<!-- PLUGINS
+  ================================================== -->
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js/jquery.colio.min.js"></script>
   <script type="text/javascript" src="js/waypoints.js"></script>
   <script type="text/javascript" src="js/waypoints.min.js"></script>  
-  <!--<script type="text/javascript">
-    $(document).ready(function(){
-      $('.thing').waypoint('disable');
-    }); 
-  </script>-->
+  <script type="text/javascript" src="css/colio-black/fancybox/jquery.fancybox.js"></script> 
+ <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script> 
+<script src="js/jquery.lazylinepainter-1.4.1.min.js"></script> 
+
+<!-- CUSTOM SCRIPT
+================================================== -->
+
+<script type="text/javascript">
+
+(function($){
+    
+    // "scrollTop" plugin 
+    $.scrollUp();
+    // "colio" plugin
+    $('.portfolio .list').colio({
+        id: 'demo_1',
+        theme: 'black',
+        placement: 'inside',
+        hiddenItems: '.isotope-hidden',
+        onContent: function(content){
+            // init "fancybox" plugin
+            $('.fancybox', content).fancybox();
+        }
+    });
+
+    // "isotope" plugin
+    var filter = '*', isotope_run = function(f) {
+        $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f}).
+        trigger('colio','excludeHidden');
+    };
+    
+    $('.portfolio .filters a').click(function(){
+        $(this).addClass('filter-active').siblings().removeClass('filter-active');
+        var href = $(this).attr('href').substr(1);
+        filter = href ? '.' + href : '*';
+        isotope_run(filter);
+        return false;
+    });
+    
+    isotope_run(filter);
+
+    // Define object containing your Raphael path data.
+    // goto http://lazylinepainter.info to convert your svg into a svgData object.
+    var createSVG = {
+        "create2": {
+            "strokepath": [{
+            "path": "M280.9,127.044h-34.049h-5.677v5.667v9.208L59.584,95.873v-7.084L161.729,49.12v4.249v5.667h5.674h34.049  h5.674v-5.667V19.366v-5.667h-5.674h-34.049h-5.674v5.667v17.708L59.584,77.098v-1.064v-5.666H53.91H19.862h-5.677v5.666v34.003  v5.671h5.674h34.049h5.673v-5.666v-2.479l181.594,46.047v8.501l-111.721,78.273H99.307h-5.674v5.669v34.004v5.666h5.674h34.048  h5.674v-5.666v-32.237l107.112-75.441h0.711H280.9h5.674v-5.666V132.71v-5.667H280.9z M173.078,25.035h22.7v22.667h-22.7V25.035z   M48.234,104.374H25.536V81.706h22.698V104.374z M127.681,274.39h-22.698v-22.668h22.698V274.39z M275.223,161.047h-22.698v-22.668  h22.698V161.047z",
+            "duration": 1300
+            }],
+            "dimensions": {
+            "width": 300,
+            "height": 300
+            }
+        }
+    };  
+
+    var codeSVG = {
+    "code2": {
+      "strokepath": [
+        {
+          "path": "M 274.674,249.39 L 170.237,249.394 164.405,249.394 164.405,255.869 164.405,274.028 164.405,280.5 170.237,280.5    274.674,280.5 280.5,280.5 280.5,274.028 280.5,255.869 280.5,249.394  z",
+            "duration": 600
+          },
+        {
+          "path": "M 114.556,24.29 L 22.687,76.252 19.5,78.051 19.5,82.022 19.5,95.988 19.5,99.967 22.695,101.765 114.561,153.501    123.029,158.265 123.029,147.72 123.029,132.841 123.029,128.858 119.829,127.06 51.854,88.893 119.829,50.724 123.029,48.928    123.029,44.942 123.029,30.063 123.029,19.5  z",
+              "duration": 600
+          },
+        {
+          "path": "M 222.453,19. L 205.447,19.5 201.711,19.5 200.151,23.283 98.129,271.332 94.358,280.5 103.433,280.5 120.438,280.5    124.187,280.5 125.74,276.71 227.755,28.669 231.521,19.5  z",
+            "duration": 600
+        }
+          ],
+            "dimensions": {
+                "width": 300,
+                "height": 300
+                }
+            }
+        }; 
+
+
+    var convertSVG = {
+    "convert2": {
+      "strokepath": [
+        {
+          "path": "M209.423,15.126c24.964,0,49.92,0,74.865,0c0,23.899,0,47.801,0,71.7   c-7.242,0.62-15.717,0.09-23.447,0.269c-0.649-10.625-0.095-22.396-0.277-33.466c-2.807,1.564-5.023,3.922-7.347,6.109   c-35.226,33.115-71.141,67.045-106.495,100.377c-16.169-14.312-31.013-28.876-47.182-44.08c-0.944-0.88-3.024-2.92-3.11-2.92   c-0.572-0.02-3.995,3.495-5.079,4.513c-10.397,9.771-19.062,17.908-29.669,27.882c-1.247,1.173-4.107,4.757-4.801,4.782   c-0.866,0.033-6.854-6.174-7.625-6.903c-2.807-2.639-5.234-5.511-7.625-6.903c2.062,25.984,12.616,43.073,28.525,56.293   c15.199,12.633,38.282,22.758,66.115,19.126c25.787-3.374,44.166-15.151,56.21-30.277c11.272-14.149,20.589-35.221,16.091-60.545   c-0.233-1.336-1.022-3.164-0.831-4.252c0.38-2.358,7.261-7.62,9.037-9.29c1.664-1.56,3.318-2.863,4.801-4.248   c1.516-1.425,2.642-3.526,4.81-3.718c11.768,27.442,5.181,67.978-9.904,86.843c14.687,14.099,30.025,29.233,45.776,43.285   c7.833,6.979,19.221,14,18.639,27.873c-0.363,8.765-5.779,15.541-12.149,19.914c-7.424,5.117-20.984,5.784-29.088,0.271   c-5.442-3.706-10.121-9.506-15.268-14.337c-14.955-14.067-31.116-28.533-45.751-42.494c-16.688,8.846-37.295,14.67-61.02,13.016   c-22.459-1.563-41.211-9.627-55.093-19.116c-26.359-18.034-50.726-53.035-42.095-98.792c7.192-38.063,33.863-64.752,68.94-76.742   c19.037-6.517,44.356-7.824,64.962-2.391c19.574,5.156,34.67,14.438,47.468,26.024c-4.836,5.551-10.753,10.068-15.822,15.403   c-16.811-16.242-48.396-29.629-82.779-20.714c-28.377,7.363-47.38,26.151-57.059,50.453c2.062,3.299,4.731,4.977,7.911,7.966   c0.407,0.383,2.157,2.643,2.547,2.655c0.694,0.033,4.021-3.515,5.078-4.512c10.19-9.583,19.185-18.026,29.669-27.882   c1.283-1.218,4.255-4.761,4.801-4.781c0.866-0.037,4.956,4.39,6.499,5.84c14.454,13.595,29.236,27.866,43.784,41.163   c32.183-30.207,65.37-60.878,96.606-91.082c-11.203-0.179-23.16,0.347-33.896-0.269c0-7.082,0-14.165,0-21.243   C209.119,15.545,209.102,15.171,209.423,15.126z",
+                "duration": 1800
+        }
+          ],
+          "dimensions": {
+              "width": 300,
+              "height": 300
+              }
+          }
+      }; 
+ 
+ 
+/* 
+ Setup and Paint your lazyline! 
+ */ 
+    
+    $('.thing').waypoint(function() {
+        //  Setup your Lazy Line element.
+        //  see README file for more settings
+        $('#create2').lazylinepainter({"svgData": createSVG,"strokeWidth": 2,"strokeColor": "#444444"}).lazylinepainter('paint'); 
+    }, {triggerOnce: true});
+
+    $('.thing2').waypoint(function() {
+        //  Setup your Lazy Line element.
+        //  see README file for more settings
+        $('#code2').lazylinepainter({"svgData": codeSVG,"strokeWidth": 2,"strokeColor": "#444444"}).lazylinepainter('paint'); 
+    }, {triggerOnce: true});
+
+    $('.thing3').waypoint(function() {
+        //  Setup your Lazy Line element.
+        //  see README file for more settings
+        $('#convert2').lazylinepainter({"svgData": convertSVG,"strokeWidth": 2,"strokeColor": "#444444"}).lazylinepainter('paint'); 
+    }, {triggerOnce: true});
+
+})( jQuery ); 
+
+</script>
 </body>
 </html>
 

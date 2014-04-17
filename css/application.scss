@@ -6,7 +6,7 @@ body {
   background-color: $ltgrey;
   background-image: url("/images/bg.png");
   background-position: center 20px;
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-family: $josefin;
   line-height: 1.5em;
   width: 100%;
   margin: 0;
@@ -26,7 +26,7 @@ h1 {
   line-height: 1.333em;
   text-align: center;
   color: #00B292;
-  font-family: 'lekton';
+  font-family: $lekton;
   @include media($tab-up) {
   font-size: 5em;
   }
@@ -44,15 +44,26 @@ h1 {
 
 h2 {
   @extend h1;
-  text-align: left;
   font-size: 2.5em;
   line-height: .5em;
   color: $ltgrey;
+    @include media($tab-up) {
+      text-align: left;
+    }
 }
 
 h3 {
   @extend h2;
   color: $grey;
+}
+
+h5 {
+  font-family: $lekton;
+  font-size: 2em;
+  color: $green;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 20px 0 20px 0; 
 }
 
 
@@ -66,7 +77,7 @@ nav {
  @include media($tablet) {
     border: 0;
     margin-left: auto;
-    max-width: 68.57143em;
+    max-width: 960px;
     margin-right: auto;
   }
   
@@ -76,6 +87,8 @@ nav {
           list-style-type: none;
                   @include media($tablet) {
                     margin-bottom: 0;
+                    width: 390px;
+                    margin-left: auto;
                   }
         li {
            @include media($tablet) {
@@ -149,6 +162,15 @@ section#work{
     padding-right: 4%;
     padding-left: 4%;
   }
+  a, a:visited {
+    color: $clouds;
+    @include transition(color 0.4s linear);
+  }
+
+  a:hover, a:active {
+    color: $dk-blue;
+  }
+  h2 {margin-bottom:65px;}
     ul {
         list-style-type: none;
         padding:0;
@@ -173,17 +195,47 @@ section#about{
   h2 {
     color: $grey;
   }
-  .leftcol{
-    @include span-columns(12);
-    float: right;
-    @include media ($tablet){
-          float: right;
-      @include span-columns(4);
-    }
-    
-  }
 
-  .rightcol{
+  }
+  article.about{
+    margin: 30px 0 30px 0;
+
+    .leftcol{
+      @include span-columns(12);
+      float: left;
+
+
+
+      @include media ($tablet){
+        @include span-columns(6);
+          padding-left: 10%;
+      }
+    }
+
+    .rightcol{
+      @include span-columns(12);
+
+      @include media ($tablet){
+        padding-left: 10%;
+        float: right !important;
+        @include span-columns(6);
+      }
+    }
+
+        .pad-left {
+          @include media ($tablet){
+      padding-left: 14%;
+    }
+      }
+    }
+
+  .text-mobile{  
+      margin: 20%;
+      @include media ($tablet){
+        margin:0;
+      }
+  }
+  .about-para{
     @include span-columns(12);
     float: right !important;    
     @include media ($tablet){
@@ -191,7 +243,7 @@ section#about{
       @include span-columns(8);
     }
     }
-}
+
 
 
 
@@ -210,9 +262,9 @@ section {
   article {
     @include span-columns(12);
     
-    @include media($desktop) {
+    /*@include media($desktop) {
       @include span-columns(8);
-    }
+    }*/
   }
   
   figure {
@@ -232,6 +284,7 @@ footer {
   font-size: em(12, $base-value);
   font-style: italic;
   margin: 2em 0;
+  clear: both;
   text-align: center;
 }
 

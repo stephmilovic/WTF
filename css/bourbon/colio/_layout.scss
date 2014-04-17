@@ -17,7 +17,12 @@
 
 /* #Basic Styles
 ================================================== */
-	
+$ltgrey:                #e5e5e5;
+$green:                 #00c09e;
+$clouds:                #ECF0F1;
+$white:                 #ffffff;
+$lt-blue:               #00EBFF;
+$dk-blue:               #2D3449;
 
 li { line-height: 21px; margin-bottom: 7px; }
 
@@ -33,7 +38,7 @@ input[type="button"] {
 	border: none;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background: #ff5452;
+	background: $dk-blue;
 	color: #fff!important;
 	font-size: 13px;
 	line-height: 21px;
@@ -50,7 +55,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
 	border: none;
-	background: #f2504e;
+	background: $dk-blue;
 }
 
 .button:active,
@@ -59,7 +64,7 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
 	border: none;
-	background: #f2504e;
+	background: $dk-blue;
 }
 
 
@@ -144,7 +149,7 @@ input[type="button"]:active {
 }
 
 .nav-links a:hover {
-	color: #ff5452;
+	color: $clouds;
 }
 
 /* portfolio filters */
@@ -153,23 +158,23 @@ input[type="button"]:active {
 	right: 0;
 	top: 0;
 	position: absolute;
+	margin-right:39px;
 }
 
 .portfolio .filters a {
 	display: inline-block;
 	margin-left: 20px;
 	padding: 3px 2px;
-	color: #999;
+	color: $clouds;
 	text-decoration: none;
 }
 
 .portfolio .filters a:hover {
-	color: #666;
+	color: $dk-blue;
 }
 
 .portfolio .filters a.filter-active {
-	color: #666;
-	border-bottom: 1px solid #47dfff;
+	border-bottom: 1px solid $lt-blue;
 }
 
 /* portfolio list */
@@ -309,7 +314,7 @@ footer .copyright {
 		.preview-theme + p { margin-bottom: 42px; }
 		.main-header { margin: 21px 0 0!important; }
 		.purchase { text-align: center; padding-top: 21px; }
-		.portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
+		.portfolio .filters { float: left; margin: 38px 0; text-align: center; width: 100%; }
 		.portfolio .filters a { margin: 0 10px; }
 		.portfolio .list li { float: none; margin-right: 0; }
 		.colio { margin-right: 0!important; }
