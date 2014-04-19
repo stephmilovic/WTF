@@ -21,8 +21,8 @@ $ltgrey:                #e5e5e5;
 $green:                 #00c09e;
 $clouds:                #ECF0F1;
 $white:                 #ffffff;
-$lt-blue:               #00EBFF;
-$dk-blue:               #2D3449;
+$dk-grey:               #333;
+$salmon:								#FF5452;
 
 li { line-height: 21px; margin-bottom: 7px; }
 
@@ -38,7 +38,7 @@ input[type="button"] {
 	border: none;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background: $dk-blue;
+	background: $salmon;
 	color: #fff!important;
 	font-size: 13px;
 	line-height: 21px;
@@ -55,7 +55,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
 	border: none;
-	background: $dk-blue;
+	background: $salmon;
 }
 
 .button:active,
@@ -64,7 +64,7 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
 	border: none;
-	background: $dk-blue;
+	background: $salmon;
 }
 
 
@@ -170,11 +170,11 @@ input[type="button"]:active {
 }
 
 .portfolio .filters a:hover {
-	color: $dk-blue;
+	color: $dk-grey;
 }
 
 .portfolio .filters a.filter-active {
-	border-bottom: 1px solid $lt-blue;
+	border-bottom: 1px solid $clouds;
 }
 
 /* portfolio list */

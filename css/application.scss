@@ -2,6 +2,8 @@
 @import "neat/neat";
 @import "variables";
 
+html, body { overflow-x: hidden !important; }
+
 body {
   background-color: $ltgrey;
   background-image: url("/images/bg.png");
@@ -13,12 +15,13 @@ body {
 }
 
 a, a:visited {
-  color: lighten($green, 10%);
+  color: $green;
+  text-decoration: none;
   @include transition(color 0.4s linear);
 }
 
 a:hover, a:active {
-  color: $green;
+  color: darken($green, 30%);
 }
 
 h1 {
@@ -115,12 +118,11 @@ nav {
 
 
 .wrap {
-
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
    @include media($tablet) {  
     display: table;
-background-color: #444;
+    background-color: #444;
   }
 }
 
@@ -237,7 +239,9 @@ section#about{
   }
   .about-para{
     @include span-columns(12);
-    float: right !important;    
+    float: right !important;
+    padding-left: 7%;
+    padding-right: 7%;    
     @include media ($tablet){
           float: right;
       @include span-columns(8);
@@ -297,7 +301,142 @@ footer {
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 }
-/* /////// Expandr CSS /////// */
+
+/* /////// Laptop CSS /////// */
+
+.laptop {
+  height: 166px;
+  width: 300px;
+  background-image: url(/images/mobile.png);
+  background-repeat: no-repeat;
+  /*margin-top: 200px !important;*/
+  margin: auto;
+  padding-top: 3px;
+
+    @include media($desktop) {
+      height: 442px;
+      width: 849px;
+      background-image: url(/images/desktop.png); 
+      padding-top: 27px;
+    }
+    @include media($only-tab) {
+      height: 364px;
+      width: 698px;
+      background-image: url(/images/tablet.png); 
+      padding-top: 27px;
+    }    
+   span {
+    width: 280px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    margin-top:10px;
+      @include media($only-tab) {
+        width: 642px;
+        height: 337px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        margin-top:0;
+      }
+      @include media($desktop) {
+        width: 781px;
+        height: 410px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+      }
+    img {
+      width: 100%;
+      display: block;
+      transition: all 1s ease-in-out;
+-webkit-transition: all 1s ease-in-out;
+      
+      }
+    .lapscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 4s ease-in-out;
+      -moz-transition: all 4s ease-in-out;
+      -o-transition: all 4s ease-in-out;
+      -ms-transition: all 4s ease-in-out;
+      transition: all 4s ease-in-out;
+    }
+    #stmlap:hover {
+      margin-top: -500px;
+      @include media($only-tab) {
+        margin-top:-1157px;
+      }
+      @include media($desktop) {
+        margin-top:-1407px;
+      }
+      }
+  }
+}
+.mobile{
+  display: block;
+    @include media($tablet) {
+      display: none !important;
+    }
+}
+.tablet{
+  display: none;
+      @include media($only-tab) {
+      display: block !important;
+    }
+}
+
+.desktop{
+  display: none;
+      @include media($desktop-only) {
+      display: block !important;
+    }
+}
 
 
+#create2 {
+  display: none !important;
+   @include media($desktop) {
+      display: block !important;
+    }
+}
 
+#code2 {
+  display: none;
+   @include media($desktop) {
+      display: block !important;
+    }
+}
+
+#convert2 {
+  display: none;
+   @include media($desktop) {
+      display: block !important;
+    }
+}
+
+#create {
+  display: block;
+   @include media($desktop) {
+      display: none !important;
+    }
+}
+
+#code {
+  display: block;
+   @include media($desktop) {
+      display: none !important;
+    }
+}
+
+#convert {
+  display: block;
+   @include media($desktop) {
+      display: none !important;
+    }
+}

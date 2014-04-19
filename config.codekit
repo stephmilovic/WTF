@@ -1439,6 +1439,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/images\/controls.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1410,
+		"inputAbbreviatedPath": "\/css\/images\/controls.png",
+		"outputAbbreviatedPath": "\/css\/images\/controls.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/neat\/_neat-helpers.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1786,6 +1797,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/comp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4382,
+		"inputAbbreviatedPath": "\/images\/comp.png",
+		"outputAbbreviatedPath": "\/images\/comp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/desktop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12570,
+		"inputAbbreviatedPath": "\/images\/desktop.png",
+		"outputAbbreviatedPath": "\/images\/desktop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/frame.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11571,
+		"inputAbbreviatedPath": "\/images\/frame.png",
+		"outputAbbreviatedPath": "\/images\/frame.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3559,
+		"inputAbbreviatedPath": "\/images\/mobile.png",
+		"outputAbbreviatedPath": "\/images\/mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rev-bigscreen.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 678901,
+		"inputAbbreviatedPath": "\/images\/rev-bigscreen.jpg",
+		"outputAbbreviatedPath": "\/images\/rev-bigscreen.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rev-desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 254323,
+		"inputAbbreviatedPath": "\/images\/rev-desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/rev-desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rev-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51582,
+		"inputAbbreviatedPath": "\/images\/rev-mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/rev-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rev-tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206117,
+		"inputAbbreviatedPath": "\/images\/rev-tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/rev-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/scrollup.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1793,6 +1892,28 @@
 		"initialSize": 3327,
 		"inputAbbreviatedPath": "\/images\/scrollup.png",
 		"outputAbbreviatedPath": "\/images\/scrollup.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stlap2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99735,
+		"inputAbbreviatedPath": "\/images\/stlap2.jpg",
+		"outputAbbreviatedPath": "\/images\/stlap2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tablet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10524,
+		"inputAbbreviatedPath": "\/images\/tablet.png",
+		"outputAbbreviatedPath": "\/images\/tablet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

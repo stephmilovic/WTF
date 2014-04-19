@@ -30,7 +30,7 @@
 }
 
 .colio-theme-black .colio-close span {
-	background: url(images/controls.png) no-repeat -48px 0;
+	background: url('images/controls.png') no-repeat -48px 0;
 }
 
 .colio-theme-black .colio-close:hover {
@@ -68,11 +68,11 @@
 }
 
 .colio-theme-black .colio-prev span {
-	background: url(images/controls.png) no-repeat 0 0;
+	background: url('images/controls.png') no-repeat 0 0;
 }
 
 .colio-theme-black .colio-next span {
-	background: url(images/controls.png) no-repeat -24px 0;
+	background: url('images/controls.png') no-repeat -24px 0;
 }
 
 .colio-theme-black .colio-no-prev,
@@ -83,7 +83,8 @@
 /* content */
 
 .colio-theme-black .main {
-	float: left;
+	margin-left: auto;
+	margin-right:auto;
 	width: 45%;
 	padding: 20px;
 	-webkit-box-sizing: border-box;
@@ -108,8 +109,9 @@
 
 .colio-theme-black h3 {
 	padding: 0;
-	margin: 0 0 35px 100px;
+	margin: 0 0 35px 0;
 	color: #ccc;
+	text-align:center;
 }
 
 .colio-theme-black a,
@@ -122,7 +124,11 @@
 .colio-theme-black a:hover {
 	color: #eee;
 }
-
+.colio-theme-black .links {
+	margin-right: auto;
+	width: 297px;
+	margin-left: auto;
+}
 .colio-theme-black a.visit-link {
 	display: inline-block;
 	padding: 5px 15px;
@@ -257,7 +263,7 @@
 	.colio-theme-black .side { clear: both; width: 100%; padding: 0; margin-bottom: 40px; }
 	.colio-theme-black .side { margin-bottom: 0; }
 	.colio-theme-black .colio-navigation { left: 40px; top: 40px; }
-	.colio-theme-black .main h3 { float: none; margin: 60px 0 20px; text-align: left; }
+	.colio-theme-black .main h3 { float: none; margin: 60px 0 20px; text-align: left; line-height:1em; }
 	
 }
 
@@ -267,7 +273,7 @@
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	
-	.colio-theme-black .colio-container { padding: 30px; }
+	.colio-theme-black .colio-container { padding: 30px 10px 0 10px; }
 	.colio-theme-black .colio-navigation { left: 30px; top: 30px; }
 	.colio-theme-black .feed li { width: 115px; height: 115px; }
 	
