@@ -10,7 +10,7 @@
  
   <!-- CSS
   ================================================== -->
-    <link rel="stylesheet" href="css/tidy.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/colio.css" type="text/css" media="screen" charset="utf-8">    
     <link href='http://fonts.googleapis.com/css?family=Lekton|Josefin+Sans' rel='stylesheet' type='text/css'>
 
@@ -144,16 +144,16 @@
           <p>Coded in Wordpress using Bootstrap with SASS and Compass. </p>
           <p>Optimized for "Chicago Wedding Officiant", "Ordained Minister Chicago", "Gay Wedding Officiant", and more!</p>
           <div class="links">
-            <a class="visit-link" href="http://chicagoweddingofficiant.co" target="_blank">Visit Site</a>
+            <a class="visit-link" href="#" onClick="alert('Coming soon. Check back next week!'); return false;">Visit Site</a>
             <a class="visit-link" href="https://github.com/stephmilovic/Reverend/" target="_blank">View Code on Github</a>     
           </div>     
         </div><!-- main -->
        
         <div class="laptop">
           <span>
-            <img class="revscroll mobile" id="rev" src="/images/websites/reverend-mobile.png"> 
-            <img class="revscroll tablet" id="rev" src="/images/websites/reverend-tablet.png"> 
-            <img class="revscroll desktop" id="rev" src="/images/websites/reverend-desktop.png"> 
+            <img class="unveil revscroll mobile" id="rev" src="/images/websites/loading.jpg" data-src="/images/websites/reverend-mobile.png"> 
+            <img class="unveil revscroll tablet" id="rev" src="/images/websites/loading.jpg" data-src="/images/websites/reverend-tablet.png"> 
+            <img class="unveil revscroll desktop" id="rev" src="/images/websites/loading.jpg" data-src="/images/websites/reverend-desktop.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -175,9 +175,9 @@
        
         <div class="laptop">
           <span>
-            <img class="portscroll mobile" id="port" src="/images/websites/port-mobile.png"> 
-            <img class="portscroll tablet" id="port" src="/images/websites/port-tablet.png"> 
-            <img class="portscroll desktop" id="port" src="/images/websites/port-desktop.png"> 
+            <img class="unveil portscroll mobile" id="port" src="/images/websites/loading.jpg" data-src="/images/websites/port-mobile.png"> 
+            <img class="unveil portscroll tablet" id="port" src="/images/websites/loading.jpg" data-src="/images/websites/port-tablet.png"> 
+            <img class="unveil portscroll desktop" id="port" src="/images/websites/loading.jpg" data-src="/images/websites/port-desktop.png"> 
           </span>
         </div><!-- side -->
         
@@ -197,7 +197,7 @@
        
         <div class="laptop">
           <span>
-            <img class="corpscroll" id="corp" src="/images/websites/corp-philly.png"> 
+            <img class="unveil corpscroll" id="corp" src="/images/websites/loading.jpg" data-src="/images/websites/corp-philly.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -217,9 +217,9 @@
        
         <div class="laptop">
           <span>
-            <img class="howl2goscroll mobile" id="howl2go" src="/images/websites/howl2go-mobile.png"> 
-            <img class="howl2goscroll tablet" id="howl2go" src="/images/websites/howl2go.png"> 
-            <img class="howl2goscroll desktop" id="howl2go" src="/images/websites/howl2go.png"> 
+            <img class="unveil howl2goscroll mobile" id="howl2go" src="/images/websites/loading.jpg" data-src="/images/websites/howl2go-mobile.png"> 
+            <img class="unveil howl2goscroll tablet" id="howl2go" src="/images/websites/loading.jpg" data-src="/images/websites/howl2go.png"> 
+            <img class="unveil howl2goscroll desktop" id="howl2go" src="/images/websites/loading.jpg" data-src="/images/websites/howl2go.png"> 
           </span>
         </div><!-- side -->
         
@@ -239,7 +239,7 @@
        
         <div class="laptop">
           <span>
-            <img class="livescroll" id="live" src="/images/websites/liveloud.png"> 
+            <img class="unveil livescroll" id="live" src="/images/websites/loading.jpg" data-src="/images/websites/liveloud.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -260,7 +260,7 @@
        
         <div class="laptop">
           <span>
-            <img class="clubscroll" id="club" src="/images/websites/birthday-club.png"> 
+            <img class="unveil clubscroll" id="club" src="/images/websites/loading.jpg" data-src="/images/websites/birthday-club.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -277,7 +277,7 @@
        
         <div class="laptop">
           <span>
-            <img class="stuscroll" id="stu" src="/images/websites/sturecords.png"> 
+            <img class="unveil stuscroll" id="stu" src="/images/websites/loading.jpg" data-src="/images/websites/sturecords.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -297,7 +297,7 @@
        
         <div class="laptop">
           <span>
-            <img class="showscroll" id="show" src="/images/websites/the-show.png"> 
+            <img class="unveil showscroll" id="show" src="/images/websites/loading.jpg" data-src="/images/websites/the-show.png"> 
           </span>
         </div><!-- laptop -->
         
@@ -389,6 +389,7 @@
 
 <!-- PLUGINS
   ================================================== -->
+  <script type="text/javascript" src="js/jquery.unveil.js"></script>
   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
@@ -405,7 +406,9 @@
 <script type="text/javascript">
 
 (function($){
-    
+
+    // "unveil" plugin 
+    $("img.unveil").unveil(300);
     // "scrollTop" plugin 
     $.scrollUp();
     // "colio" plugin

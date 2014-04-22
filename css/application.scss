@@ -28,8 +28,9 @@ h1 {
   font-size: 3em;
   line-height: 1.333em;
   text-align: center;
-  color: #00B292;
+  color: $green;
   font-family: $lekton;
+  font-weight: 100;
   @include media($tab-up) {
   font-size: 5em;
   }
@@ -67,6 +68,7 @@ h5 {
   text-transform: uppercase;
   text-align: left;
   margin: 20px 0 20px 0; 
+  font-weight:100;
 }
 
 

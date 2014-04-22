@@ -1265,3 +1265,574 @@ input[type="text"]:focus {
   font-weight: 400;
   src: local('Lekton'), local('Lekton-Regular'), url(http://themes.googleusercontent.com/static/fonts/lekton/v5/YyER7tmu7BJxyzR0twzSmw.ttf) format('truetype');
 }
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+/* #Lists
+================================================== */
+
+ul {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none outside;
+}
+
+li {
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+li p {
+  line-height: 21px;
+}
+
+/* #Images
+================================================== */
+
+/* #Buttons
+================================================== */
+
+.button,
+input[type="submit"] {
+  background: #eee;
+  /* Old browsers */
+  background: #eeeeee -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* FF3.6+ */
+  background: #eeeeee -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  /* Chrome,Safari4+ */
+  background: #eeeeee -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #eeeeee -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Opera11.10+ */
+  background: #eeeeee -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* IE10+ */
+  background: #eeeeee linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C */
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: normal;
+  padding: 8px 10px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+  color: #222;
+  background: #ddd;
+  /* Old browsers */
+  background: #dddddd -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* FF3.6+ */
+  background: #dddddd -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+  /* Chrome,Safari4+ */
+  background: #dddddd -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #dddddd -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Opera11.10+ */
+  background: #dddddd -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* IE10+ */
+  background: #dddddd linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* W3C */
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+
+.button:active,
+input[type="submit"]:active {
+  border: 1px solid #666;
+  background: #ccc;
+  /* Old browsers */
+  background: #cccccc -moz-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* FF3.6+ */
+  background: #cccccc -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(10, 10, 10, 0.4)));
+  /* Chrome,Safari4+ */
+  background: #cccccc -webkit-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #cccccc -o-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* Opera11.10+ */
+  background: #cccccc -ms-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* IE10+ */
+  background: #cccccc linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* W3C */
+}
+
+/* Fix for odd Mozilla border & padding issues */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* #Misc
+================================================== */
+
+/* Colio - Basic Styles
+================================================== */
+
+.colio-content {
+  display: none;
+  overflow: hidden;
+}
+
+/* navigation, close */
+
+/* placement */
+
+/**** Isotope Filtering ****/
+
+/**** Isotope CSS3 transitions ****/
+
+/**** disabling Isotope CSS3 transitions ****/
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Basic Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Basic Styles
+================================================== */
+
+li {
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+/* buttons */
+
+.button,
+input[type="submit"] {
+  margin: 0 0 14px;
+  padding: 7px 13px;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #ff5452;
+  color: white !important;
+  font-size: 13px;
+  line-height: 21px;
+  text-shadow: -1px 0 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: background .1s;
+  -moz-transition: background .1s;
+  -o-transition: background .1s;
+  transition: background .1s;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+  border: none;
+  background: #ff5452;
+}
+
+.button:active,
+input[type="submit"]:active {
+  border: none;
+  background: #ff5452;
+}
+
+/* #Site Styles
+================================================== */
+
+/* main header */
+
+/* purchase button */
+
+/* theme preview */
+
+/* nav links */
+
+/* portfolio filters */
+
+.portfolio .filters {
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin-right: 39px;
+}
+
+.portfolio .filters a {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 3px 2px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.portfolio .filters a:hover {
+  color: #333333;
+}
+
+.portfolio .filters a.filter-active {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* portfolio list */
+
+.portfolio .list {
+  clear: both;
+}
+
+.portfolio .list li {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.portfolio .list .thumb {
+  position: relative;
+  width: 215px;
+  height: 134px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.portfolio .list .thumb img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.portfolio .list .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0s linear .3s;
+  -moz-transition: opacity 0.3s, visibility 0s linear .3s;
+  -o-transition: opacity 0.3s, visibility 0s linear .3s;
+  transition: opacity 0.3s, visibility 0s linear .3s;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.portfolio .list .thumb:hover .view {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.portfolio .list .view .button {
+  position: relative;
+  top: 50%;
+  margin-top: -17px;
+}
+
+.portfolio .list h4 {
+  text-align: center;
+}
+
+.portfolio .list h4 a {
+  text-decoration: none;
+}
+
+.portfolio .list p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+/* footer */
+
+footer {
+  margin-bottom: 21px;
+}
+
+/* scroll up */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .portfolio .list .thumb {
+    width: 228px;
+    height: 143px;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+
+  .portfolio .filters {
+    float: left;
+    margin: 38px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .portfolio .filters a {
+    margin: 0 10px;
+  }
+
+  .portfolio .list li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .portfolio .list .thumb {
+    width: 420px;
+    height: 260px;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 14px !important;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+  .portfolio .list .thumb {
+    width: 300px;
+    height: 187px;
+  }
+}
+
+/* #Font-Face
+================================================== */
+
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+/* #Base 960 Grid
+================================================== */
+
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Nested Column Classes */
+
+/* Base Grid */
+
+/* Offsets */
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 768px;
+  }
+
+  /* Offsets */
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+
+  /* Offsets */
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px;
+  }
+}
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+
+/* You can also use a <br class="clear" /> to clear columns */
+
+/* Colio - Black Theme
+================================================== */
+
+/* container */
+
+/* colio close */
+
+/* colio navigation */
+
+/* content */
+
+/* typography */
+
+/* photo feed */
+
+/* social icons */
+
+/* Retina
+================================================== */
+
+/* Media queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+/* All Mobile Sizes (devices and browser) */
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at: http://fancybox.net
+ * 
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
+ * 
+ * Version: 1.3.4 (11/11/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+/* IE6 */
+
+/* IE6, IE7, IE8 */
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v4/xgzbb53t8j-Mo-vYa23n5onF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lekton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lekton'), local('Lekton-Regular'), url(http://themes.googleusercontent.com/static/fonts/lekton/v5/YyER7tmu7BJxyzR0twzSmw.ttf) format('truetype');
+}
