@@ -83,7 +83,7 @@ nav {
     margin-left: auto;
     max-width: 960px;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 0;
   }
   
       ul{
@@ -250,7 +250,7 @@ section#contact{
     @include media($desktop) {
       @include span-columns(2);
       float:right !important;
-      padding-left: 0px !important;
+      padding-left: 0 !important;
       margin-right: 2%;
     }
   }
@@ -280,7 +280,7 @@ section#contact{
   }
   ul {
     -webkit-margin-before: 3px;
-    -webkit-padding-start: 0px;
+    -webkit-padding-start: 0;
     li{
       color: $clouds;
       font-size: 1.2em;
