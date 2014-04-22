@@ -1,211 +1,3 @@
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea {
-  background-color: #777 !important;
-  background: #777;
-  color: #00C09E; }
-
-input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
-  background: #777;
-  color: #00C09E; }
-
-input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus {
-  background: #777;
-  color: #00C09E; }
-
-/** basic default styles **/
-/** the form elements **/
-#wedding-form .txtinput {
-  display: block;
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #444;
-  margin-bottom: 20px;
-  font-size: 1.55em;
-  padding: 11px 15px;
-  width: 90%;
-  color: #00C09E;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-#wedding-form .txtinput:focus {
-  color: #00C09E;
-  border-color: rgba(0, 192, 158, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  outline: 0 none;
-  background: #777777 url("images/ok.svg") no-repeat 98% center !important;
-  z-index: 10000; }
-
-#wedding-form textarea {
-  display: block;
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #444;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  padding: 11px 15px;
-  width: 90%;
-  height: 180px;
-  color: #00C09E;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-#wedding-form textarea:focus {
-  color: #00C09E;
-  background: #777777 url("images/ok.svg") no-repeat 98% center !important;
-  border-color: rgba(0, 192, 158, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
-  outline: 0 none; }
-
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #00C09E; }
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #00C09E; }
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #00C09E; }
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #00C09E; }
-
-#submitbtn {
-  display: block;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 14px 26px;
-  float: left;
-  font-weight: bold;
-  font-size: 1.5em;
-  vertical-align: middle;
-  cursor: pointer;
-  line-height: 100%;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  background-color: #00c09e;
-  box-shadow: 0 3px 0 0 #0C8872;
-  transition: background 0.1s ease-in-out;
-  -webkit-transition: background 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out;
-  -ms-transition: background 0.1s ease-in-out;
-  -o-transition: background 0.1s ease-in-out;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  border: 0;
-  -webkit-appearance: none; }
-
-#submitbtn:hover, #submitbtn:active {
-  background-color: #66C2B2; }
-
-#submitbtn:active {
-  padding-top: 15px;
-  margin-bottom: -1px; }
-
-/** @group clearfix **/
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.clearfix {
-  display: inline-block; }
-
-html[xmlns] .clearfix {
-  display: block; }
-
-* html .clearfix {
-  height: 1%; }
-
-#wedding-form input:focus:invalid, #wedding-form textarea:focus:invalid {
-  /* when a field is considered invalid by the browser */
-  background: #777777 url("images/error.svg") no-repeat 98% center !important;
-  box-shadow: 0 0 5px #d45252;
-  border-color: #FF5452;
-  z-index: 10000; }
-
-/** all devices and responsive browser windows **/
-@media screen and (max-width: 800px) {
-  #container {
-    width: 100%; }
-
-  #wedding-form #aligned {
-    width: 100%;
-    float: none;
-    display: block; }
-
-  #wedding-form #aside {
-    width: 100%;
-    display: block;
-    float: none; }
-
-  #wedding-form .txtinput, #wedding-form textarea {
-    width: 98%; }
-
-  #prioritycase {
-    float: left;
-    display: block; }
-
-  #recipientcase {
-    float: left;
-    display: block;
-    margin-right: 55px; } }
-/* smaller screen dropoff *******/
-@media only screen and (max-width: 550px) {
-  #wedding-form .txtinput, #wedding-form textarea {
-    width: 98%; } }
-/* iPhone Landscape ********/
-@media only screen and (max-width: 480px) {
-  body {
-    padding: 10px 0; }
-
-  select.selmenu {
-    width: 190px; } }
-/* iPhone portrait *******/
-@media only screen and (max-width: 320px) {
-  body {
-    padding: 10px 0; }
-
-  #wedding-form .txtinput, #wedding-form textarea {
-    width: 98%; }
-
-  #wedding-form #aligned {
-    overflow: hidden; }
-
-  select.selmenu {
-    width: 160px; }
-
-  #recipientcase {
-    margin-right: 30px; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -932,3 +724,212 @@ footer {
   @media screen and (min-width: 850px) {
     #convert {
       display: none !important; } }
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea {
+  background-color: #777 !important;
+  background: #777;
+  color: #00C09E; }
+
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
+  background: #777;
+  color: #00C09E; }
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus {
+  background: #777;
+  color: #00C09E; }
+
+/** basic default styles **/
+/** the form elements **/
+#wedding-form .txtinput {
+  display: block;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #444;
+  margin-bottom: 20px;
+  font-size: 1.55em;
+  padding: 11px 15px;
+  width: 90%;
+  color: #00C09E;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wedding-form .txtinput:focus {
+  color: #00C09E;
+  border-color: rgba(0, 192, 158, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  outline: 0 none;
+  background: #777777 url("images/ok.svg") no-repeat 98% center !important;
+  z-index: 10000; }
+
+#wedding-form textarea {
+  display: block;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #444;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  padding: 11px 15px;
+  width: 90%;
+  height: 180px;
+  color: #00C09E;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wedding-form textarea:focus {
+  color: #00C09E;
+  background: #777777 url("images/ok.svg") no-repeat 98% center !important;
+  border-color: rgba(0, 192, 158, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(46, 139, 87, 0.6);
+  outline: 0 none; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #00C09E; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #00C09E; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #00C09E; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #00C09E; }
+
+#submitbtn {
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 14px 26px;
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 100%;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  background-color: #00c09e;
+  box-shadow: 0 3px 0 0 #0C8872;
+  transition: background 0.1s ease-in-out;
+  -webkit-transition: background 0.1s ease-in-out;
+  -moz-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  -o-transition: background 0.1s ease-in-out;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 0;
+  -webkit-appearance: none; }
+
+#submitbtn:hover, #submitbtn:active {
+  background-color: #66C2B2; }
+
+#submitbtn:active {
+  padding-top: 15px;
+  margin-bottom: -1px; }
+
+/** @group clearfix **/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+#wedding-form input:focus:invalid, #wedding-form textarea:focus:invalid {
+  /* when a field is considered invalid by the browser */
+  background: #777777 url("images/error.svg") no-repeat 98% center !important;
+  box-shadow: 0 0 5px #d45252;
+  border-color: #FF5452;
+  z-index: 10000; }
+
+/** all devices and responsive browser windows **/
+@media screen and (max-width: 800px) {
+  #container {
+    width: 100%; }
+
+  #wedding-form #aligned {
+    width: 100%;
+    float: none;
+    display: block; }
+
+  #wedding-form #aside {
+    width: 100%;
+    display: block;
+    float: none; }
+
+  #wedding-form .txtinput, #wedding-form textarea {
+    width: 98%; }
+
+  #prioritycase {
+    float: left;
+    display: block; }
+
+  #recipientcase {
+    float: left;
+    display: block;
+    margin-right: 55px; } }
+/* smaller screen dropoff *******/
+@media only screen and (max-width: 550px) {
+  #wedding-form .txtinput, #wedding-form textarea {
+    width: 98%; } }
+/* iPhone Landscape ********/
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 10px 0; }
+
+  select.selmenu {
+    width: 190px; } }
+/* iPhone portrait *******/
+@media only screen and (max-width: 320px) {
+  body {
+    padding: 10px 0; }
+
+  #wedding-form .txtinput, #wedding-form textarea {
+    width: 98%; }
+
+  #wedding-form #aligned {
+    overflow: hidden; }
+
+  select.selmenu {
+    width: 160px; }
+
+  #recipientcase {
+    margin-right: 30px; } }      
