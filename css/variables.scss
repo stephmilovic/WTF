@@ -7,8 +7,9 @@ $max-width: em(960, $base-value); // Max width of outer container
 $bigscreen: min-width 1200px;
 $desktop-only: min-width 850px max-width 1199px;
 $desktop: min-width 850px;
+$desktop2: min-width 926px;
 $tablet: min-width 750px;
-$only-tab: min-width 750px max-width 849px;
+$only-tab: min-width 750px max-width 925px;
 $mobile-only: max-width 749px;
 $phone: max-width 480px;
 $tab: min-width 481px max-width 849px;
@@ -18,8 +19,7 @@ $tab-up: min-width 481px;
 $black:                 #111111;
 
 $dk-grey:								#444;
-$grey:                  #444444;
-$ltgrey:                #e5e5e5;
+$grey:                  #999;
 
 $green:                 #00c09e;
 

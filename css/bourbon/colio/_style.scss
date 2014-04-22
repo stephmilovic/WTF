@@ -90,6 +90,9 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	@media all and (max-width: 849px) and (min-width: 750px){
+		width:75%;
+	}
 }
 
 .colio-theme-black .side {
@@ -109,7 +112,8 @@
 
 .colio-theme-black h3 {
 	padding: 0;
-	margin: 0 0 35px 0;
+	margin: 0 0 30px 0;
+	line-height: 1.2em;
 	color: #ccc;
 	text-align:center;
 }
@@ -129,6 +133,13 @@
 	width: 297px;
 	margin-left: auto;
 }
+
+.colio-theme-black .links2 {
+  margin-right: auto;
+  width: 107px;
+  margin-left: auto; 
+}
+
 .colio-theme-black a.visit-link {
 	display: inline-block;
 	padding: 5px 15px;
@@ -263,7 +274,7 @@
 	.colio-theme-black .side { clear: both; width: 100%; padding: 0; margin-bottom: 40px; }
 	.colio-theme-black .side { margin-bottom: 0; }
 	.colio-theme-black .colio-navigation { left: 40px; top: 40px; }
-	.colio-theme-black .main h3 { float: none; margin: 60px 0 20px; text-align: left; line-height:1em; }
+	.colio-theme-black .main h3 { float: none; margin: 60px 0 20px; text-align: center; line-height:1em; }
 	
 }
 

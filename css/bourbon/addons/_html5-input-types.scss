@@ -44,10 +44,21 @@ $all-text-inputs-focus: ();
       $all-text-inputs-focus: append($all-text-inputs-focus, $input-type-focus, comma);
 }
 
-// You must use interpolation on the variable:
-// #{$all-text-inputs}
-// #{$all-text-inputs-hover}
-// #{$all-text-inputs-focus}
+#{$all-text-inputs}, textarea {
+ background-color: #777 !important;
+ background: #777;
+ color: #00C09E;
+}
+
+#{$all-text-inputs-hover} { 
+  background: #777;
+ color: #00C09E;
+}
+
+#{$all-text-inputs-focus} {
+ background: #777;
+ color: #00C09E;
+}
 
 // Example
 //************************************************************************//

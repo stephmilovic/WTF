@@ -5,7 +5,7 @@
 html, body { overflow-x: hidden !important; }
 
 body {
-  background-color: $ltgrey;
+  background-color: $clouds;
   background-image: url("/images/bg.png");
   background-position: center 20px;
   font-family: $josefin;
@@ -36,7 +36,7 @@ h1 {
 }
 
 .intro-text{
-  color: #999;
+  color: $grey;
   text-align: center;
   font-size: 2em;
   line-height: 1.5em;
@@ -49,7 +49,7 @@ h2 {
   @extend h1;
   font-size: 2.5em;
   line-height: .5em;
-  color: $ltgrey;
+  color: $clouds;
     @include media($tab-up) {
       text-align: left;
     }
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
   @extend h2;
-  color: $grey;
+  color: $dk-grey;
 }
 
 h5 {
@@ -71,17 +71,19 @@ h5 {
 
 
 nav {
-  background-color: $grey;
+  background-color: $dk-grey;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   color: $green;
   margin-top: 0;
   text-transform: uppercase;
   display: block;
+  margin-top: -10px;
  @include media($tablet) {
     border: 0;
     margin-left: auto;
     max-width: 960px;
     margin-right: auto;
+    margin-top: 0px;
   }
   
       ul{
@@ -90,7 +92,7 @@ nav {
           list-style-type: none;
                   @include media($tablet) {
                     margin-bottom: 0;
-                    width: 390px;
+                    width: 400px;
                     margin-left: auto;
                   }
         li {
@@ -128,30 +130,7 @@ nav {
 
 
 
-img.centered{
-width: 100%;
-margin-left: auto;
-margin-right: auto;  
-@include span-columns(12);
-           margin-bottom: 3%;            
-
-
-           @include media($desktop) {
-              @include span-columns(4);
-              @include omega(3n);
-              margin-left: 0;
-              margin-bottom: 2%; 
-              padding:0;
-            }
-
-            @include media($tab) {
-              @include span-columns(6);
-              @include omega(2n);
-              margin-left: 0;
-              margin-bottom: 2%; 
-              padding:0;
-            }
-}
+/* /////// WORK /////// */
 
 section#work{
   @include outer-container;
@@ -185,17 +164,21 @@ section#work{
     }
 }
 
+/* /////// ABOUT /////// */
+
 section#about{
   @include outer-container;
   padding:1%;
-   height:1000px;
+  @include media ($desktop){
+    min-height: 1330px;
+  }
   @include media ($bigscreen){
     padding-right: 4%;
     padding-left: 4%;
 
   }
   h2 {
-    color: $grey;
+    color: $dk-grey;
   }
 
   }
@@ -248,7 +231,63 @@ section#about{
     }
     }
 
+/* /////// CONTACT /////// */
 
+section#contact{
+  @include outer-container;
+  padding:1%;
+  max-width:100%;
+  background-color: $dk-grey;
+  @include media ($bigscreen){
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  aside {
+    @include span-columns(12);
+
+    padding-left: 4px !important;
+    margin-bottom: 25px;
+    @include media($desktop) {
+      @include span-columns(2);
+      float:right !important;
+      padding-left: 0px !important;
+      margin-right: 2%;
+    }
+  }
+  
+  form {
+    @include span-columns(12);
+    float:left !important;
+    margin: 0 0 25px 0 !important;
+    @include media($desktop) {
+      @include span-columns(10);
+    }
+  }
+  h2 {
+    margin: 30px 4px 25px 4px;
+    color: $clouds;
+    @include media($desktop) {
+      margin: 30px 0 30px 0;
+    }
+  }
+  p {
+    color: $clouds;
+    font-size:1.2em;
+    margin: 0 4px 10px 4px;
+    @include media($desktop) {
+      margin: 0 0 20px 0;
+    }
+  }
+  ul {
+    -webkit-margin-before: 3px;
+    -webkit-padding-start: 0px;
+    li{
+      color: $clouds;
+      font-size: 1.2em;
+    }
+  }
+  img.left {margin-left:8px;}
+}
 
 
 
@@ -277,7 +316,7 @@ section {
 }
 
 figcaption {
-  color: darken($grey, 10%);
+  color: darken($dk-grey, 10%);
   font-size: em(11, $base-value);
   font-style: italic;
   line-height: 1.45em;
@@ -287,9 +326,15 @@ figcaption {
 footer {
   font-size: em(12, $base-value);
   font-style: italic;
-  margin: 2em 0;
+  padding: 2em 0;
   clear: both;
   text-align: center;
+  background-color: $dk-grey;
+  margin-bottom:0;
+    p {
+      color:$clouds;
+      font-style: normal;
+    }
 }
 
 .content-image {
@@ -313,15 +358,15 @@ box-sizing: border-box;
   margin: auto;
   padding-top: 3px;
 
-    @include media($desktop) {
+    @include media($desktop2) {
       height: 442px;
       width: 849px;
       background-image: url(/images/desktop.png); 
       padding-top: 27px;
     }
     @include media($only-tab) {
-      height: 364px;
-      width: 698px;
+      height: 348px;
+      width: 670px;
       background-image: url(/images/tablet.png); 
       padding-top: 27px;
     }    
@@ -334,15 +379,15 @@ box-sizing: border-box;
     margin: auto;
     margin-top:10px;
       @include media($only-tab) {
-        width: 642px;
-        height: 337px;
+        width: 616px;
+        height: 322px;
         position: relative;
         overflow: hidden;
         display: block;
         margin: auto;
         margin-top:0;
       }
-      @include media($desktop) {
+      @include media($desktop2) {
         width: 781px;
         height: 410px;
         position: relative;
@@ -358,24 +403,270 @@ box-sizing: border-box;
 -webkit-transition: all 1s ease-in-out;
       
       }
-    .lapscroll {
+    .revscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 4s ease-in-out;
-      -moz-transition: all 4s ease-in-out;
-      -o-transition: all 4s ease-in-out;
-      -ms-transition: all 4s ease-in-out;
-      transition: all 4s ease-in-out;
-    }
-    #stmlap:hover {
-      margin-top: -500px;
+      -webkit-transition: all 8s ease-in-out;
+      -moz-transition: all 8s ease-in-out;
+      -o-transition: all 8s ease-in-out;
+      -ms-transition: all 8s ease-in-out;
+      transition: all 8s ease-in-out;
       @include media($only-tab) {
-        margin-top:-1157px;
+         -webkit-transition: all 5s ease-in-out;
+        -moz-transition: all 5s ease-in-out;
+        -o-transition: all 5s ease-in-out;
+        -ms-transition: all 5s ease-in-out;
+        transition: all 5s ease-in-out;       
       }
-      @include media($desktop) {
-        margin-top:-1407px;
+      @include media($desktop2) {
+        -webkit-transition: all 5s ease-in-out;
+        -moz-transition: all 5s ease-in-out;
+        -o-transition: all 5s ease-in-out;
+        -ms-transition: all 5s ease-in-out;
+        transition: all 5s ease-in-out;        
+      }
+    }
+    #rev:hover {
+      margin-top: -1200px;
+      @include media($only-tab) {
+        margin-top:-1115px;
+      }
+      @include media($desktop2) {
+        margin-top:-1015px;
       }
       }
+
+    .portscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 16s ease-in-out;
+      -moz-transition: all 16s ease-in-out;
+      -o-transition: all 16s ease-in-out;
+      -ms-transition: all 16s ease-in-out;
+      transition: all 16s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 10s ease-in-out;
+        -moz-transition: all 10s ease-in-out;
+        -o-transition: all 10s ease-in-out;
+        -ms-transition: all 10s ease-in-out;
+        transition: all 10s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 8s ease-in-out;
+        -moz-transition: all 8s ease-in-out;
+        -o-transition: all 8s ease-in-out;
+        -ms-transition: all 8s ease-in-out;
+        transition: all 8s ease-in-out;        
+      }
+    }
+    #port:hover {
+      margin-top: -4540px;
+      @include media($only-tab) {
+        margin-top:-2680px;
+      }
+      @include media($desktop2) {
+        margin-top:-1900px;
+      }
+      }
+
+    .corpscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 16s ease-in-out;
+      -moz-transition: all 16s ease-in-out;
+      -o-transition: all 16s ease-in-out;
+      -ms-transition: all 16s ease-in-out;
+      transition: all 16s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 10s ease-in-out;
+        -moz-transition: all 10s ease-in-out;
+        -o-transition: all 10s ease-in-out;
+        -ms-transition: all 10s ease-in-out;
+        transition: all 10s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 8s ease-in-out;
+        -moz-transition: all 8s ease-in-out;
+        -o-transition: all 8s ease-in-out;
+        -ms-transition: all 8s ease-in-out;
+        transition: all 8s ease-in-out;        
+      }
+    }
+    #corp:hover {
+      margin-top: -4540px;
+      @include media($only-tab) {
+        margin-top:-1800px;
+      }
+      @include media($desktop2) {
+        margin-top:-2250px;
+      }
+      }
+
+    .howl2goscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 10s ease-in-out;
+      -moz-transition: all 10s ease-in-out;
+      -o-transition: all 10s ease-in-out;
+      -ms-transition: all 10s ease-in-out;
+      transition: all 10s ease-in-out;   
+      @include media($only-tab) {
+         -webkit-transition: all 6s ease-in-out;
+        -moz-transition: all 6s ease-in-out;
+        -o-transition: all 6s ease-in-out;
+        -ms-transition: all 6s ease-in-out;
+        transition: all 6s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 8s ease-in-out;
+        -moz-transition: all 8s ease-in-out;
+        -o-transition: all 8s ease-in-out;
+        -ms-transition: all 8s ease-in-out;
+        transition: all 8s ease-in-out;        
+      }
+    }
+    #howl2go:hover {
+      margin-top: -1530px;
+      @include media($only-tab) {
+        margin-top:-815px;
+      }
+      @include media($desktop2) {
+        margin-top:-1020px;
+      }
+      }
+
+    .livescroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 5s ease-in-out;
+      -moz-transition: all 5s ease-in-out;
+      -o-transition: all 5s ease-in-out;
+      -ms-transition: all 5s ease-in-out;
+      transition: all 5s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 7s ease-in-out;
+        -moz-transition: all 7s ease-in-out;
+        -o-transition: all 7s ease-in-out;
+        -ms-transition: all 7s ease-in-out;
+        transition: all 7s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 8s ease-in-out;
+        -moz-transition: all 8s ease-in-out;
+        -o-transition: all 8s ease-in-out;
+        -ms-transition: all 8s ease-in-out;
+        transition: all 8s ease-in-out;        
+      }
+    }
+    #live:hover {
+      margin-top: -465px;
+      @include media($only-tab) {
+        margin-top:-1035px;
+      }
+      @include media($desktop2) {
+        margin-top:-1310px;
+      }
+      }      
+
+    .clubscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 3.5s ease-in-out;
+        -moz-transition: all 3.5s ease-in-out;
+        -o-transition: all 3.5s ease-in-out;
+        -ms-transition: all 3.5s ease-in-out;
+        transition: all 3.5s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 5s ease-in-out;
+        -moz-transition: all 5s ease-in-out;
+        -o-transition: all 5s ease-in-out;
+        -ms-transition: all 5s ease-in-out;
+        transition: all 5s ease-in-out;        
+      }
+    }
+    #club:hover {
+      margin-top: -240px;
+      @include media($only-tab) {
+        margin-top:-550px;
+      }
+      @include media($desktop2) {
+        margin-top:-700px;
+      }
+      }  
+
+    .stuscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 3s ease-in-out;
+        -moz-transition: all 3s ease-in-out;
+        -o-transition: all 3s ease-in-out;
+        -ms-transition: all 3s ease-in-out;
+        transition: all 3s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 4s ease-in-out;
+        -moz-transition: all 4s ease-in-out;
+        -o-transition: all 4s ease-in-out;
+        -ms-transition: all 4s ease-in-out;
+        transition: all 4s ease-in-out;        
+      }
+    }
+    #stu:hover {
+      margin-top: -150px;
+      @include media($only-tab) {
+        margin-top:-370px;
+      }
+      @include media($desktop2) {
+        margin-top:-480px;
+      }
+      }        
+
+    .showscroll {
+      cursor: s-resize;
+      margin-top: -2px;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      @include media($only-tab) {
+         -webkit-transition: all 3.5s ease-in-out;
+        -moz-transition: all 3.5s ease-in-out;
+        -o-transition: all 3.5s ease-in-out;
+        -ms-transition: all 3.5s ease-in-out;
+        transition: all 3.5s ease-in-out;       
+      }
+      @include media($desktop2) {
+        -webkit-transition: all 3s ease-in-out;
+        -moz-transition: all 3s ease-in-out;
+        -o-transition: all 3s ease-in-out;
+        -ms-transition: all 3s ease-in-out;
+        transition: all 3s ease-in-out;        
+      }
+    }
+    #show:hover {
+      margin-top: -215px;
+      @include media($only-tab) {
+        margin-top:-496px;
+      }
+      @include media($desktop2) {
+        margin-top:-623px;
+      }
+      }  
+
   }
 }
 .mobile{
@@ -385,7 +676,7 @@ box-sizing: border-box;
     }
 }
 .tablet{
-  display: none;
+  display: none !important;
       @include media($only-tab) {
       display: block !important;
     }
@@ -440,3 +731,4 @@ box-sizing: border-box;
       display: none !important;
     }
 }
+
