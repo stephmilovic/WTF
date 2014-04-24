@@ -396,7 +396,6 @@
   <script type="text/javascript" src="js/jquery.colio.min.js"></script>
   <script type="text/javascript" src="js/waypoints.min.js"></script>  
   <script type="text/javascript" src="css/colio-black/fancybox/jquery.fancybox.js"></script> 
- <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script> 
 <script src="js/jquery.lazylinepainter-1.4.1.min.js"></script> 
 
@@ -407,8 +406,6 @@
 
 (function($){
 
-    // "unveil" plugin 
-    $("img").unveil();
     // "scrollTop" plugin 
     $.scrollUp();
     // "colio" plugin
@@ -420,6 +417,8 @@
         onContent: function(content){
             // init "fancybox" plugin
             $('.fancybox', content).fancybox();
+            // "unveil" plugin 
+            $("img").unveil();
         }
     });
 
