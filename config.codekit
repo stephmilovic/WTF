@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16895",
+"creatorBuild": "16903",
 "files": {
 	"\/css\/application.css": {
 		"fileType": 16,
@@ -1486,6 +1486,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/images\/controls@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1419,
+		"inputAbbreviatedPath": "\/css\/images\/controls@2x.png",
+		"outputAbbreviatedPath": "\/css\/images\/controls@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/neat\/_neat-helpers.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2491,6 +2502,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/birthday-club.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 430064,
+		"inputAbbreviatedPath": "\/images\/websites\/birthday-club.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/birthday-club.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/birthday-club.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2513,6 +2535,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/corp-philly.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.55298e+06,
+		"inputAbbreviatedPath": "\/images\/websites\/corp-philly.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/corp-philly.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/corp-philly.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2520,6 +2553,17 @@
 		"initialSize": 5.1444e+06,
 		"inputAbbreviatedPath": "\/images\/websites\/corp-philly.png",
 		"outputAbbreviatedPath": "\/images\/websites\/corp-philly.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/howl2go-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 218894,
+		"inputAbbreviatedPath": "\/images\/websites\/howl2go-mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/howl2go-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2535,6 +2579,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/howl2go.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 647570,
+		"inputAbbreviatedPath": "\/images\/websites\/howl2go.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/howl2go.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/howl2go.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2542,6 +2597,17 @@
 		"initialSize": 1.40493e+06,
 		"inputAbbreviatedPath": "\/images\/websites\/howl2go.png",
 		"outputAbbreviatedPath": "\/images\/websites\/howl2go.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/liveloud.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 665430,
+		"inputAbbreviatedPath": "\/images\/websites\/liveloud.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/liveloud.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2590,6 +2656,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/port-desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 590359,
+		"inputAbbreviatedPath": "\/images\/websites\/port-desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/port-desktop.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2597,6 +2674,17 @@
 		"initialSize": 520192,
 		"inputAbbreviatedPath": "\/images\/websites\/port-desktop.png",
 		"outputAbbreviatedPath": "\/images\/websites\/port-desktop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/port-desktop1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 712760,
+		"inputAbbreviatedPath": "\/images\/websites\/port-desktop1.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-desktop1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2612,6 +2700,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/port-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 526870,
+		"inputAbbreviatedPath": "\/images\/websites\/port-mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/port-mobile.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2619,6 +2718,17 @@
 		"initialSize": 651264,
 		"inputAbbreviatedPath": "\/images\/websites\/port-mobile.png",
 		"outputAbbreviatedPath": "\/images\/websites\/port-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/port-mobile1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 577549,
+		"inputAbbreviatedPath": "\/images\/websites\/port-mobile1.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-mobile1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2634,6 +2744,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/port-tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 562093,
+		"inputAbbreviatedPath": "\/images\/websites\/port-tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/port-tablet.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2641,6 +2762,17 @@
 		"initialSize": 483738,
 		"inputAbbreviatedPath": "\/images\/websites\/port-tablet.png",
 		"outputAbbreviatedPath": "\/images\/websites\/port-tablet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/port-tablet1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 637955,
+		"inputAbbreviatedPath": "\/images\/websites\/port-tablet1.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/port-tablet1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2656,6 +2788,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/reverend-desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 447478,
+		"inputAbbreviatedPath": "\/images\/websites\/reverend-desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/reverend-desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/reverend-desktop.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2663,6 +2806,17 @@
 		"initialSize": 2.21694e+06,
 		"inputAbbreviatedPath": "\/images\/websites\/reverend-desktop.png",
 		"outputAbbreviatedPath": "\/images\/websites\/reverend-desktop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/reverend-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184521,
+		"inputAbbreviatedPath": "\/images\/websites\/reverend-mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/reverend-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2678,6 +2832,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/reverend-tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 225348,
+		"inputAbbreviatedPath": "\/images\/websites\/reverend-tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/reverend-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/reverend-tablet.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2689,6 +2854,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/websites\/sturecords.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 219270,
+		"inputAbbreviatedPath": "\/images\/websites\/sturecords.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/sturecords.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/websites\/sturecords.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2696,6 +2872,17 @@
 		"initialSize": 932550,
 		"inputAbbreviatedPath": "\/images\/websites\/sturecords.png",
 		"outputAbbreviatedPath": "\/images\/websites\/sturecords.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/websites\/the-show.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 358689,
+		"inputAbbreviatedPath": "\/images\/websites\/the-show.jpg",
+		"outputAbbreviatedPath": "\/images\/websites\/the-show.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2727,15 +2914,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/insert.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/insert.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

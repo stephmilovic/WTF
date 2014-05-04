@@ -15,7 +15,7 @@ $body = " From: $name_field\n\n E-Mail: $email_field\n\n Message:\n\n $message";
 mail($to, $subject, $body);
  
 // redirect to confirmation
-header('Location: http://www.stephmilovic.com/WTF/success');
+header('Location: http://www.histeph.com/success');
 } else {
   echo "Error! Please try again.";
 }

@@ -401,31 +401,18 @@ box-sizing: border-box;
     img {
       width: 100%;
       display: block;
-      transition: all 1s ease-in-out;
--webkit-transition: all 1s ease-in-out;
+      @include transition(all 1s ease-in-out); 
       
       }
     .revscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 8s ease-in-out;
-      -moz-transition: all 8s ease-in-out;
-      -o-transition: all 8s ease-in-out;
-      -ms-transition: all 8s ease-in-out;
-      transition: all 8s ease-in-out;
+      @include transition(all 8s ease-in-out); 
       @include media($only-tab) {
-         -webkit-transition: all 5s ease-in-out;
-        -moz-transition: all 5s ease-in-out;
-        -o-transition: all 5s ease-in-out;
-        -ms-transition: all 5s ease-in-out;
-        transition: all 5s ease-in-out;       
+       @include transition(all 5s ease-in-out);      
       }
       @include media($desktop2) {
-        -webkit-transition: all 5s ease-in-out;
-        -moz-transition: all 5s ease-in-out;
-        -o-transition: all 5s ease-in-out;
-        -ms-transition: all 5s ease-in-out;
-        transition: all 5s ease-in-out;        
+        @include transition(all 5s ease-in-out);         
       }
     }
     #rev:hover {
@@ -441,24 +428,12 @@ box-sizing: border-box;
     .portscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 16s ease-in-out;
-      -moz-transition: all 16s ease-in-out;
-      -o-transition: all 16s ease-in-out;
-      -ms-transition: all 16s ease-in-out;
-      transition: all 16s ease-in-out;
+      @include transition(all 16s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 10s ease-in-out;
-        -moz-transition: all 10s ease-in-out;
-        -o-transition: all 10s ease-in-out;
-        -ms-transition: all 10s ease-in-out;
-        transition: all 10s ease-in-out;       
+         @include transition(all 10s ease-in-out);      
       }
       @include media($desktop2) {
-        -webkit-transition: all 8s ease-in-out;
-        -moz-transition: all 8s ease-in-out;
-        -o-transition: all 8s ease-in-out;
-        -ms-transition: all 8s ease-in-out;
-        transition: all 8s ease-in-out;        
+        @include transition(all 8s ease-in-out);       
       }
     }
     #port:hover {
@@ -474,24 +449,12 @@ box-sizing: border-box;
     .corpscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 16s ease-in-out;
-      -moz-transition: all 16s ease-in-out;
-      -o-transition: all 16s ease-in-out;
-      -ms-transition: all 16s ease-in-out;
-      transition: all 16s ease-in-out;
+      @include transition(all 16s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 10s ease-in-out;
-        -moz-transition: all 10s ease-in-out;
-        -o-transition: all 10s ease-in-out;
-        -ms-transition: all 10s ease-in-out;
-        transition: all 10s ease-in-out;       
+         @include transition(all 10s ease-in-out);       
       }
       @include media($desktop2) {
-        -webkit-transition: all 8s ease-in-out;
-        -moz-transition: all 8s ease-in-out;
-        -o-transition: all 8s ease-in-out;
-        -ms-transition: all 8s ease-in-out;
-        transition: all 8s ease-in-out;        
+       @include transition(all 8s ease-in-out);         
       }
     }
     #corp:hover {
@@ -507,24 +470,12 @@ box-sizing: border-box;
     .howl2goscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 10s ease-in-out;
-      -moz-transition: all 10s ease-in-out;
-      -o-transition: all 10s ease-in-out;
-      -ms-transition: all 10s ease-in-out;
-      transition: all 10s ease-in-out;   
+      @include transition(all 10s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 6s ease-in-out;
-        -moz-transition: all 6s ease-in-out;
-        -o-transition: all 6s ease-in-out;
-        -ms-transition: all 6s ease-in-out;
-        transition: all 6s ease-in-out;       
+         @include transition(all 6s ease-in-out);         
       }
       @include media($desktop2) {
-        -webkit-transition: all 8s ease-in-out;
-        -moz-transition: all 8s ease-in-out;
-        -o-transition: all 8s ease-in-out;
-        -ms-transition: all 8s ease-in-out;
-        transition: all 8s ease-in-out;        
+        @include transition(all 8s ease-in-out);         
       }
     }
     #howl2go:hover {
@@ -540,24 +491,12 @@ box-sizing: border-box;
     .livescroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 5s ease-in-out;
-      -moz-transition: all 5s ease-in-out;
-      -o-transition: all 5s ease-in-out;
-      -ms-transition: all 5s ease-in-out;
-      transition: all 5s ease-in-out;
+      @include transition(all 5s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 7s ease-in-out;
-        -moz-transition: all 7s ease-in-out;
-        -o-transition: all 7s ease-in-out;
-        -ms-transition: all 7s ease-in-out;
-        transition: all 7s ease-in-out;       
+         @include transition(all 7s ease-in-out);      
       }
       @include media($desktop2) {
-        -webkit-transition: all 8s ease-in-out;
-        -moz-transition: all 8s ease-in-out;
-        -o-transition: all 8s ease-in-out;
-        -ms-transition: all 8s ease-in-out;
-        transition: all 8s ease-in-out;        
+        @include transition(all 8s ease-in-out);        
       }
     }
     #live:hover {
@@ -573,24 +512,12 @@ box-sizing: border-box;
     .clubscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -o-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;
+      @include transition(all 2s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 3.5s ease-in-out;
-        -moz-transition: all 3.5s ease-in-out;
-        -o-transition: all 3.5s ease-in-out;
-        -ms-transition: all 3.5s ease-in-out;
-        transition: all 3.5s ease-in-out;       
+         @include transition(all 3.5s ease-in-out);        
       }
       @include media($desktop2) {
-        -webkit-transition: all 5s ease-in-out;
-        -moz-transition: all 5s ease-in-out;
-        -o-transition: all 5s ease-in-out;
-        -ms-transition: all 5s ease-in-out;
-        transition: all 5s ease-in-out;        
+        @include transition(all 5s ease-in-out);         
       }
     }
     #club:hover {
@@ -606,24 +533,12 @@ box-sizing: border-box;
     .stuscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -o-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;
+      @include transition(all 2s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 3s ease-in-out;
-        -moz-transition: all 3s ease-in-out;
-        -o-transition: all 3s ease-in-out;
-        -ms-transition: all 3s ease-in-out;
-        transition: all 3s ease-in-out;       
+         @include transition(all 3s ease-in-out);       
       }
       @include media($desktop2) {
-        -webkit-transition: all 4s ease-in-out;
-        -moz-transition: all 4s ease-in-out;
-        -o-transition: all 4s ease-in-out;
-        -ms-transition: all 4s ease-in-out;
-        transition: all 4s ease-in-out;        
+        @include transition(all 4s ease-in-out);       
       }
     }
     #stu:hover {
@@ -639,24 +554,12 @@ box-sizing: border-box;
     .showscroll {
       cursor: s-resize;
       margin-top: -2px;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -o-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;
+      @include transition(all 2s ease-in-out);   
       @include media($only-tab) {
-         -webkit-transition: all 3.5s ease-in-out;
-        -moz-transition: all 3.5s ease-in-out;
-        -o-transition: all 3.5s ease-in-out;
-        -ms-transition: all 3.5s ease-in-out;
-        transition: all 3.5s ease-in-out;       
+         @include transition(all 3.5s ease-in-out);    
       }
       @include media($desktop2) {
-        -webkit-transition: all 3s ease-in-out;
-        -moz-transition: all 3s ease-in-out;
-        -o-transition: all 3s ease-in-out;
-        -ms-transition: all 3s ease-in-out;
-        transition: all 3s ease-in-out;        
+        @include transition(all 3s ease-in-out);      
       }
     }
     #show:hover {
@@ -733,4 +636,6 @@ box-sizing: border-box;
       display: none !important;
     }
 }
+
+
 
